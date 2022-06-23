@@ -1,41 +1,78 @@
+:root {
+    --primary-color: antiquewhite;
+}
+
 body {
     font-family: 'Barlow', sans-serif;
-    margin: 80px auto;
+    margin: 0px auto;
     width: 1200px;
     /* background: rgb(6, 115, 118); */
-
+    color: antiquewhite;
 }
 
 h1 {
+    font-size: 100 px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    font-size: 90 px;
     text-align: center;
     color: antiquewhite;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
 }
 
 p {
     font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: var(--primary-color);
 }
 
 .logo {
-    width: 5%;
+    width: 8%;
 }
 
 .hero-block {
-    margin-top: 50px;
-    border: 3px solid antiquewhite;
+    /* margin-top: 50px; */
+    /* border: 3px solid antiquewhite; */
     background: rgb(6, 115, 118);
     height: 400px;
+    padding: 25px;
+    margin-top: -2px;
+}
+
+.heroBordered {
+    border: 3px solid antiquewhite;
+    margin: 20px;
 }
 
 h2 {
     color: antiquewhite;
-    font-size: 70 px;
+    font-size: 40 px;
     text-align: center;
 
 }
 
 .nav {
-    width: 1200 !important
+    /* width: 1200 !important; */
+    color: var(--primary-color);
+}
+
+.inviteText {
+    margin: 40px 60px;
+    text-indent: 30px;
+}
+
+.inviteLinks {
+    color: rgb(9, 9, 98);
+}
+
+.sectionVideo {
+    height: 500px;
+    background: rgb(6, 115, 118);
+
+}
+
+.menuItem {
+    color: rgb(9, 9, 98) !important;
+    width: 100px !important;
+    text-align: center !important;
 }
