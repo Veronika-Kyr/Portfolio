@@ -128,7 +128,7 @@ h2 {
     }
 
     .hero-block {
-        height: 300px;
+        height: 320px;
     }
 
     h1 {
@@ -153,13 +153,27 @@ h2 {
         height: 250px;
     }
 
+    .heroBordered {
+        margin: 10px;
+    }
 
     .der {
         margin-top: 15px;
+        width: 150px;
+        padding: 5px;
+
     }
 
     .crois {
         margin-top: 15px;
+        width: 150px;
+        padding: 5px;
+
+    }
+
+    .weather {
+        width: 150px;
+        padding: 5px;
 
     }
 }
