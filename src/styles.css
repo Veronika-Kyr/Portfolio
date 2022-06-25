@@ -61,7 +61,7 @@ h2 {
 }
 
 .sectionVideo {
-    height: 500px;
+    height: 450px;
     background: rgb(6, 115, 118);
 }
 
@@ -70,6 +70,10 @@ h2 {
     display: block;
     margin: 0px auto;
     padding-top: 30px;
+}
+
+.decorationSector {
+    background: rgb(6, 115, 118);
 }
 
 .footer {
@@ -88,4 +92,37 @@ h2 {
     color: rgb(9, 9, 98);
     text-decoration: none;
     padding-left: 8px;
+}
+
+.code {
+    width: 450px;
+    padding: 20px;
+    display: block;
+    margin: 20px auto;
+}
+
+.weather {
+    width: 300px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+
+.der {
+    width: 300px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+
+}
+
+.crois {
+    width: 330px;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid white;
+
 }
