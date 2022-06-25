@@ -64,3 +64,28 @@ h2 {
     height: 500px;
     background: rgb(6, 115, 118);
 }
+
+.video {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+.footer {
+    background: #3ea516;
+    height: 80px;
+}
+
+.socialMedialinks {
+    margin: 0px auto;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footerLinks {
+    color: rgb(9, 9, 98);
+    text-decoration: none;
+    padding-left: 8px;
+}
