@@ -25,6 +25,7 @@ body {
     height: 400px;
     padding: 25px;
     margin-top: -2px;
+    display: flex;
 }
 
 .heroBordered {
@@ -106,7 +107,7 @@ h2 {
     padding: 15px;
     display: block;
     margin: 0 auto;
-    border: 3px solid white;
+    border: 3px solid var(--primary-color);
 }
 
 .der {
@@ -114,7 +115,7 @@ h2 {
     padding: 15px;
     display: block;
     margin: 0 auto;
-    border: 3px solid white;
+    border: 3px solid var(--primary-color);
 
 }
 
@@ -123,6 +124,6 @@ h2 {
     padding: 15px;
     display: block;
     margin: 0 auto;
-    border: 3px solid white;
+    border: 3px solid var(--primary-color);
 
 }
