@@ -156,13 +156,21 @@ h2 {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .video {
         width: 350px;
     }
 
     .hero-block {
         height: 320px;
+    }
+
+    .heroContact {
+        height: 200px;
+    }
+
+    a.navbar-brand {
+        width: 200px !important;
     }
 
     h1 {
@@ -183,6 +191,21 @@ h2 {
         margin: 10px 20px;
     }
 
+    .contactSection {
+        font-size: 12px;
+        text-align: center;
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contactLinks {
+        font-size: 20px;
+
+
+        /* padding-left: 15px; */
+    }
+
+
     .sectionVideo {
         height: 250px;
     }
@@ -195,7 +218,6 @@ h2 {
         margin-top: 15px;
         width: 150px;
         padding: 5px;
-
     }
 
     .crois {
@@ -209,5 +231,18 @@ h2 {
         width: 150px;
         padding: 5px;
 
+    }
+
+    .footer {
+        height: 130px;
+    }
+
+    .aboutCoded {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .socialMedialinks {
+        padding-top: 17px;
     }
 }
