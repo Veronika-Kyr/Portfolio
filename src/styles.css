@@ -93,6 +93,31 @@ h2 {
     padding-top: 30px;
 }
 
+.heroAbout {
+    height: 300px;
+}
+
+.sectionAboutMe {
+    height: 650px;
+    background: rgb(6, 115, 118);
+    padding: 0 30px;
+}
+
+.myPhoto {
+    width: 400px;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    float: left;
+    margin-right: 25px;
+}
+
+.aboutInformation {
+    padding: 5px 15px 20px 15px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 20px;
+}
+
 .decorationSector {
     background: rgb(6, 115, 118);
 }
