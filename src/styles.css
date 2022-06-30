@@ -98,10 +98,21 @@ h2 {
 }
 
 .sectionAboutMe {
-    height: 650px;
+    height: 1000px;
     background: rgb(6, 115, 118);
     padding: 0 30px;
 }
+
+.containerCertificate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageCert {
+    width: 300px;
+    padding: 40px 10px 10px 10px;
+}
+
 
 .myPhoto {
     width: 400px;
@@ -239,6 +250,47 @@ h2 {
         margin: 10px;
     }
 
+    .aboutInformation {
+        font-size: 16px;
+        padding: 0 5px;
+
+    }
+
+    .myPhoto {
+        width: 280px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        float: none;
+    }
+
+    .heroAbout {
+        height: 240px;
+    }
+
+    .sectionAboutMe {
+        height: 1600px;
+    }
+
+    .imageCert {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionAboutMe h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    /* .containerCertificate {
+        text-align: center;
+    } */
+
     .der {
         margin-top: 15px;
         width: 150px;
@@ -259,7 +311,7 @@ h2 {
     }
 
     .footer {
-        height: 130px;
+        height: 115px;
     }
 
     .aboutCoded {
