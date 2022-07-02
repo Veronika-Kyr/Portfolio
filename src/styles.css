@@ -8,7 +8,7 @@ body {
     font-family: 'Barlow', sans-serif;
     margin: 0px auto;
     max-width: 1200px;
-    color: antiquewhite;
+    color: var(--primary-color);
 }
 
 
@@ -16,6 +16,12 @@ body {
     color: rgb(9, 9, 98) !important;
     width: 100px !important;
     text-align: center !important;
+}
+
+button.navbar-toggler {
+    padding: 2px 8px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
 }
 
 .logo {
@@ -35,7 +41,7 @@ body {
 }
 
 .heroBordered {
-    border: 3px solid antiquewhite;
+    border: 3px solid var(--primary-color);
     margin: 20px;
 }
 
@@ -43,14 +49,14 @@ h1 {
     font-size: 100 px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     text-align: center;
-    color: antiquewhite;
+    color: var(--primary-color);
     margin-top: 40px;
     font-weight: 600;
     letter-spacing: 0.3em;
 }
 
 h2 {
-    color: antiquewhite;
+    color: var(--primary-color);
     font-size: 40 px;
     text-align: center;
 }
