@@ -1,5 +1,7 @@
 :root {
     --primary-color: antiquewhite;
+    --main-color: rgb(6, 115, 118);
+    --accent-color: #3ea516;
 }
 
 body {
@@ -103,6 +105,13 @@ h2 {
     padding: 0 30px;
 }
 
+.sectionApplications {
+    /* height: 1000px; */
+    background: rgb(6, 115, 118);
+    padding: 0 30px 30px 30px;
+
+}
+
 .containerCertificate {
     display: flex;
     flex-wrap: wrap;
@@ -192,134 +201,185 @@ h2 {
 
 }
 
-@media (max-width: 500px) {
-    .video {
-        width: 350px;
-    }
+/* .launch-link {} */
 
-    .hero-block {
-        height: 320px;
-    }
+.navigation-links-app {
+    width: 320px;
+    background: var(--accent-color);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 20px 15px;
+}
 
-    .heroContact {
-        height: 200px;
-    }
+.navigation-links-app a {
+    margin: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
 
+.appHeading {
+    text-align: center;
+}
+
+.appDescription {
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 60px !important;
+}
+
+
+@media (max-width: 800px) {
     a.navbar-brand {
         width: 200px !important;
     }
 
-    h1 {
-        font-size: 30px;
-        margin-top: 25px;
+    @media (max-width: 500px) {
+        .video {
+            width: 350px;
+        }
 
-    }
+        .hero-block {
+            height: 320px;
+        }
 
-    h2 {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-
-    .inviteText {
-        font-size: 12px;
-        text-align: center;
-        /* margin: 20px 30px; */
-        margin: 10px 20px;
-    }
-
-    .contactSection {
-        font-size: 12px;
-        text-align: center;
-        margin-top: -30px;
-        height: 550px;
-    }
-
-    .contactLinks {
-        font-size: 20px;
+        .heroContact {
+            height: 200px;
+        }
 
 
-        /* padding-left: 15px; */
-    }
+        h1 {
+            font-size: 30px;
+            margin-top: 25px;
+
+        }
+
+        h2 {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .inviteText {
+            font-size: 12px;
+            text-align: center;
+            /* margin: 20px 30px; */
+            margin: 10px 20px;
+        }
+
+        .contactSection {
+            font-size: 12px;
+            text-align: center;
+            margin-top: -30px;
+            height: 550px;
+        }
+
+        .contactLinks {
+            font-size: 20px;
 
 
-    .sectionVideo {
-        height: 250px;
-    }
+            /* padding-left: 15px; */
+        }
 
-    .heroBordered {
-        margin: 10px;
-    }
 
-    .aboutInformation {
-        font-size: 16px;
-        padding: 0 5px;
+        .sectionVideo {
+            height: 250px;
+        }
 
-    }
+        .heroBordered {
+            margin: 10px;
+        }
 
-    .myPhoto {
-        width: 280px;
-        margin-bottom: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        float: none;
-    }
+        .aboutInformation {
+            font-size: 16px;
+            padding: 0 5px;
 
-    .heroAbout {
-        height: 240px;
-    }
+        }
 
-    .sectionAboutMe {
-        height: 1600px;
-    }
+        .myPhoto {
+            width: 280px;
+            margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            float: none;
+        }
 
-    .imageCert {
-        padding: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        .heroAbout {
+            height: 240px;
+        }
 
-    .sectionAboutMe h2 {
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
+        .sectionAboutMe {
+            height: 1600px;
+        }
 
-    /* .containerCertificate {
+        .imageCert {
+            padding: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .sectionAboutMe h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+
+        .heroProject {
+            height: 240px;
+        }
+
+        .appHeading {
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+
+        /* 
+        .sectionApplications {
+            height: 1600px;
+
+        } */
+
+        /* .containerCertificate {
         text-align: center;
     } */
 
-    .der {
-        margin-top: 15px;
-        width: 150px;
-        padding: 5px;
+        .der {
+            margin-top: 15px;
+            width: 150px;
+            padding: 5px;
+        }
+
+        .crois {
+            margin-top: 15px;
+            width: 150px;
+            padding: 5px;
+
+        }
+
+        .weather {
+            width: 150px;
+            padding: 5px;
+
+        }
+
+        .footer {
+            height: 115px;
+        }
+
+        .aboutCoded {
+            text-align: center;
+            margin-top: 6px;
+        }
+
+        .socialMedialinks {
+            padding-top: 17px;
+        }
     }
-
-    .crois {
-        margin-top: 15px;
-        width: 150px;
-        padding: 5px;
-
-    }
-
-    .weather {
-        width: 150px;
-        padding: 5px;
-
-    }
-
-    .footer {
-        height: 115px;
-    }
-
-    .aboutCoded {
-        text-align: center;
-        margin-top: 6px;
-    }
-
-    .socialMedialinks {
-        padding-top: 17px;
-    }
-}
