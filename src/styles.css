@@ -8,7 +8,6 @@ body {
     font-family: 'Barlow', sans-serif;
     margin: 0px auto;
     max-width: 1200px;
-    /* background: rgb(6, 115, 118); */
     color: antiquewhite;
 }
 
@@ -24,12 +23,11 @@ body {
 }
 
 .activePage {
-    /* color: var(--primary-color) !important; */
     font-weight: 600;
 }
 
 .hero-block {
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
     height: 400px;
     padding: 25px;
     margin-top: -2px;
@@ -71,12 +69,12 @@ h2 {
 
 .sectionVideo {
     height: 450px;
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
 }
 
 .contactSection {
     height: 450px;
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
     font-size: 20px;
 }
 
@@ -101,13 +99,12 @@ h2 {
 
 .sectionAboutMe {
     height: 1000px;
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
     padding: 0 30px;
 }
 
 .sectionApplications {
-    /* height: 1000px; */
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
     padding: 0 30px 30px 30px;
 
 }
@@ -139,11 +136,11 @@ h2 {
 }
 
 .decorationSector {
-    background: rgb(6, 115, 118);
+    background: var(--main-color);
 }
 
 .footer {
-    background: #3ea516;
+    background: var(--accent-color);
     height: 90px;
 }
 
@@ -189,7 +186,6 @@ h2 {
     display: block;
     margin: 0 auto;
     border: 3px solid var(--primary-color);
-
 }
 
 .crois {
@@ -198,10 +194,7 @@ h2 {
     display: block;
     margin: 0 auto;
     border: 3px solid var(--primary-color);
-
 }
-
-/* .launch-link {} */
 
 .navigation-links-app {
     width: 320px;
@@ -234,152 +227,132 @@ h2 {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     a.navbar-brand {
         width: 200px !important;
     }
+}
 
-    @media (max-width: 500px) {
-        .video {
-            width: 350px;
-        }
-
-        .hero-block {
-            height: 320px;
-        }
-
-        .heroContact {
-            height: 200px;
-        }
-
-
-        h1 {
-            font-size: 30px;
-            margin-top: 25px;
-
-        }
-
-        h2 {
-            font-size: 15px;
-            margin-top: 10px;
-        }
-
-        .inviteText {
-            font-size: 12px;
-            text-align: center;
-            /* margin: 20px 30px; */
-            margin: 10px 20px;
-        }
-
-        .contactSection {
-            font-size: 12px;
-            text-align: center;
-            margin-top: -30px;
-            height: 550px;
-        }
-
-        .contactLinks {
-            font-size: 20px;
-
-
-            /* padding-left: 15px; */
-        }
-
-
-        .sectionVideo {
-            height: 250px;
-        }
-
-        .heroBordered {
-            margin: 10px;
-        }
-
-        .aboutInformation {
-            font-size: 16px;
-            padding: 0 5px;
-
-        }
-
-        .myPhoto {
-            width: 280px;
-            margin-bottom: 20px;
-            margin-right: auto;
-            margin-left: auto;
-            display: block;
-            float: none;
-        }
-
-        .heroAbout {
-            height: 240px;
-        }
-
-        .sectionAboutMe {
-            height: 1600px;
-        }
-
-        .imageCert {
-            padding: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .sectionAboutMe h2 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 35px;
-            margin-bottom: 20px;
-        }
-
-        .heroProject {
-            height: 240px;
-        }
-
-        .appHeading {
-            font-size: 18px;
-            font-weight: 600;
-
-        }
-
-        /* 
-        .sectionApplications {
-            height: 1600px;
-
-        } */
-
-        /* .containerCertificate {
-        text-align: center;
-    } */
-
-        .der {
-            margin-top: 15px;
-            width: 150px;
-            padding: 5px;
-        }
-
-        .crois {
-            margin-top: 15px;
-            width: 150px;
-            padding: 5px;
-
-        }
-
-        .weather {
-            width: 150px;
-            padding: 5px;
-
-        }
-
-        .footer {
-            height: 115px;
-        }
-
-        .aboutCoded {
-            text-align: center;
-            margin-top: 6px;
-        }
-
-        .socialMedialinks {
-            padding-top: 17px;
-        }
+@media (max-width: 600px) {
+    .video {
+        width: 350px;
     }
+
+    .hero-block {
+        height: 320px;
+    }
+
+    .heroContact {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+
+    h2 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .inviteText {
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 20px;
+    }
+
+    .contactSection {
+        font-size: 12px;
+        text-align: center;
+        margin-top: -30px;
+        height: 550px;
+    }
+
+    .contactLinks {
+        font-size: 20px;
+    }
+
+    .sectionVideo {
+        height: 250px;
+    }
+
+    .heroBordered {
+        margin: 10px;
+    }
+
+    .aboutInformation {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .myPhoto {
+        width: 280px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        float: none;
+    }
+
+    .heroAbout {
+        height: 240px;
+    }
+
+    .sectionAboutMe {
+        height: 1600px;
+    }
+
+    .imageCert {
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sectionAboutMe h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    .heroProject {
+        height: 240px;
+    }
+
+    .appHeading {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .der {
+        margin-top: 15px;
+        width: 150px;
+        padding: 5px;
+    }
+
+    .crois {
+        margin-top: 15px;
+        width: 150px;
+        padding: 5px;
+    }
+
+    .weather {
+        width: 150px;
+        padding: 5px;
+    }
+
+    .footer {
+        height: 115px;
+    }
+
+    .aboutCoded {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .socialMedialinks {
+        padding-top: 17px;
+    }
+}
