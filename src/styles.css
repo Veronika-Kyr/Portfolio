@@ -206,7 +206,7 @@ h2 {
 }
 
 .navigation-links-app {
-    width: 320px;
+    width: 300px;
     background: var(--accent-color);
     text-align: center;
     margin-left: auto;
@@ -219,7 +219,7 @@ h2 {
     margin: 20px;
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
