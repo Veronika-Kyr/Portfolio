@@ -18,6 +18,12 @@ body {
     text-align: center !important;
 }
 
+.menuItem:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    color: var(--primary-color) !important;
+}
+
 button.navbar-toggler {
     padding: 2px 8px !important;
     margin-top: 4px !important;
@@ -34,7 +40,7 @@ button.navbar-toggler {
 
 .hero-block {
     background: var(--main-color);
-    height: 400px;
+    min-height: 300px;
     padding: 25px;
     margin-top: -2px;
 
@@ -43,6 +49,10 @@ button.navbar-toggler {
 .heroBordered {
     border: 3px solid var(--primary-color);
     margin: 20px;
+    animation: moveBorder1 1s linear 1 normal none,
+        moveBorder2 2s linear 1 normal none,
+        moveBorder3 3s linear 1 normal none,
+        moveBorder4 4s linear 1 normal none;
 }
 
 h1 {
@@ -61,6 +71,14 @@ h2 {
     text-align: center;
 }
 
+.resumeLink {
+    margin: 20px;
+}
+
+.resumeLink a {
+    color: rgb(9, 9, 98);
+}
+
 .inviteText {
     margin: 40px 60px;
     text-indent: 30px;
@@ -71,36 +89,120 @@ h2 {
 
 .inviteLinks {
     color: rgb(9, 9, 98);
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .sectionVideo {
-    height: 450px;
+    min-height: 450px;
+    padding-bottom: 50px;
     background: var(--main-color);
 }
 
+.decorationWord {
+    display: inline-block;
+    font-size: 40px;
+    font-style: italic;
+    transform: rotate(315deg);
+}
+
+.firstWord {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    animation: appearance 3s linear 5s infinite normal none;
+}
+
+.secondWord {
+    position: absolute;
+    top: 95%;
+    left: 22%;
+    animation: appearance 3s linear 6s infinite normal none;
+}
+
+.thirdWord {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+    animation: appearance 3s linear 5.5s infinite normal none;
+}
+
+.fourthWord {
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    animation: appearance 3s linear 6.5s infinite normal none;
+}
+
+.fifthWord {
+    position: absolute;
+    top: 125%;
+    left: 15%;
+    animation: appearance 3s linear 7s infinite normal none;
+}
+
+.sixthWord {
+    position: absolute;
+    top: 125%;
+    left: 72%;
+    animation: appearance 3s linear 7.5s infinite normal none;
+}
+
 .contactSection {
+    display: flex;
+
     padding-bottom: 30px;
     background: var(--main-color);
     font-size: 20px;
 }
 
+.forContacts {
+    flex: 0.9 0 0% !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+}
+
+.qrCode {
+    display: inline-block;
+    width: 200px;
+}
+
+.qrDescription {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(9, 9, 98);
+    font-weight: 600;
+}
+
+.code {
+    display: block;
+    margin: 3px auto;
+    width: 70%;
+}
+
 .contactLinks {
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(9, 9, 98);
     font-weight: 600;
     text-decoration: none;
     padding-left: 15px;
 }
 
+.contactLinks:last-child {
+    font-style: italic;
+}
+
 .video {
-    width: 600px;
-    display: block;
     margin: 0px auto;
-    padding-top: 30px;
+    padding: 30px;
+    width: 400px;
+    display: block;
+    box-shadow: 1px 1px 5px 5px #718888;
 }
 
 .heroAbout {
-    height: 300px;
+    /*height: 300px;*/
 }
 
 .sectionAboutMe {
@@ -117,11 +219,21 @@ h2 {
 .containerCertificate {
     display: flex;
     flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
 }
 
 .imageCert {
     width: 300px;
     padding: 40px 10px 10px 10px;
+}
+
+.imageCert:hover {
+    z-index: 1;
+    position: absolute;
+    top: 1300px;
+    left: 600px;
+    transform: scale(4);
 }
 
 
@@ -134,7 +246,7 @@ h2 {
 }
 
 .aboutInformation {
-    padding: 5px 15px 20px 15px;
+    padding: 5px 15px 5px 15px;
     text-align: justify;
     text-indent: 20px;
     font-size: 20px;
@@ -145,7 +257,7 @@ h2 {
 }
 
 .heroContact {
-    height: 300px;
+    /* height: 300px;*/
 }
 
 .footer {
@@ -154,23 +266,25 @@ h2 {
 }
 
 .aboutCoded {
+    margin-top: -20px;
+    margin-right: 10px;
+    margin-bottom: -10px;
     font-size: 12px;
     text-align: right;
     color: rgb(9, 9, 98);
-    margin-top: -20px;
-    margin-right: 10px;
 }
 
 .footerMail {
     display: block;
     margin: 7px auto;
+    margin-bottom: 20px;
     text-align: center;
     color: rgb(9, 9, 98);
 }
 
 .socialMedialinks {
     margin: 0px auto;
-    padding-top: 25px;
+    padding-top: 35px;
     text-align: center;
     font-size: 16px;
 }
@@ -179,6 +293,16 @@ h2 {
     color: rgb(9, 9, 98);
     text-decoration: none;
     padding-left: 8px;
+}
+
+.myProjects-link {
+    color: rgb(9, 9, 98);
+    font-weight: 600;
+}
+
+.imgProject {
+    display: flex !important;
+    align-items: center !important;
 }
 
 .weather {
@@ -206,13 +330,13 @@ h2 {
 }
 
 .navigation-links-app {
-    width: 300px;
+    width: 290px;
     background: var(--accent-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    padding: 20px 15px;
+    padding: 17px 10px;
 }
 
 .navigation-links-app a {
@@ -226,13 +350,135 @@ h2 {
 
 .appHeading {
     text-align: center;
+    color: rgb(9, 9, 98);
+    font-weight: 600;
 }
 
 .appDescription {
     text-indent: 15px;
     text-align: justify;
     font-size: 16px;
-    margin-bottom: 60px !important;
+    margin-bottom: 7px !important;
+}
+
+.gitLink {
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 35px !important;
+}
+
+.firstLetter {
+    animation: move 2s linear 1 normal none;
+    display: inline-block;
+}
+
+.secondLetter {
+    animation: moveBack 2s linear 1 normal none;
+    display: inline-block;
+}
+
+
+@keyframes move {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes moveBack {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveBorder1 {
+    from {
+        border-left: none;
+    }
+
+    to {
+        border-left: 3px solid var(--primary-color);
+
+    }
+}
+
+@keyframes moveBorder2 {
+    from {
+        border-top: none;
+    }
+
+    to {
+        border-top: 3px solid var(--primary-color);
+
+    }
+}
+
+@keyframes moveBorder3 {
+    from {
+        border-right: none;
+    }
+
+    to {
+        border-right: 3px solid var(--primary-color);
+
+    }
+}
+
+@keyframes moveBorder4 {
+    from {
+        border-bottom: none;
+    }
+
+    to {
+        border-bottom: 3px solid var(--primary-color);
+
+    }
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 
