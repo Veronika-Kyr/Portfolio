@@ -150,7 +150,6 @@ h2 {
 
 .contactSection {
     display: flex;
-
     padding-bottom: 30px;
     background: var(--main-color);
     font-size: 20px;
@@ -199,10 +198,6 @@ h2 {
     width: 400px;
     display: block;
     box-shadow: 1px 1px 5px 5px #718888;
-}
-
-.heroAbout {
-    /*height: 300px;*/
 }
 
 .sectionAboutMe {
@@ -524,9 +519,16 @@ h2 {
     }
 
     .contactSection {
+        display: block;
         font-size: 12px;
         text-align: center;
         margin-top: -30px;
+    }
+
+
+
+    .forContacts {
+        flex: 0 0 0%
     }
 
     .contactLinks {
@@ -600,7 +602,7 @@ h2 {
     }
 
     .footer {
-        height: 115px;
+        height: 90px;
     }
 
     .aboutCoded {
