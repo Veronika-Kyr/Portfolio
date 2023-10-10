@@ -491,15 +491,16 @@ h2 {
     }
 
     .video {
+        padding: 15px;
         width: 350px;
     }
 
     .hero-block {
-        height: 320px;
+        min-height: 320px;
     }
 
     .heroContact {
-        height: 200px;
+        min-height: 200px;
     }
 
     h1 {
@@ -518,6 +519,10 @@ h2 {
         margin: 10px 20px;
     }
 
+    .inviteLinks {
+        font-size: 12px;
+    }
+
     .contactSection {
         font-size: 12px;
         text-align: center;
@@ -529,7 +534,7 @@ h2 {
     }
 
     .sectionVideo {
-        height: 250px;
+        min-height: 250px;
     }
 
     .heroBordered {
@@ -551,7 +556,7 @@ h2 {
     }
 
     .heroAbout {
-        height: 240px;
+        min-height: 240px;
     }
 
     .imageCert {
@@ -605,11 +610,16 @@ h2 {
 
     .socialMedialinks {
         padding-top: 17px;
+        font-size: 12px;
     }
 
     .imageCert:hover {
         width: 300px;
         padding: 40px 10px 10px 10px;
+    }
+
+    .qrCode {
+        display: none;
     }
 
 }
