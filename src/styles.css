@@ -256,9 +256,6 @@ h2 {
     background: var(--main-color);
 }
 
-.heroContact {
-    /* height: 300px;*/
-}
 
 .footer {
     background: var(--accent-color);
@@ -489,6 +486,10 @@ h2 {
 }
 
 @media (max-width: 600px) {
+    .decorationWord {
+        display: none;
+    }
+
     .video {
         width: 350px;
     }
@@ -605,4 +606,10 @@ h2 {
     .socialMedialinks {
         padding-top: 17px;
     }
+
+    .imageCert:hover {
+        width: 300px;
+        padding: 40px 10px 10px 10px;
+    }
+
 }
